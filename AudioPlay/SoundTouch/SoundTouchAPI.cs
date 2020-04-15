@@ -332,7 +332,11 @@ namespace AudioPlay.SoundTouch
 
         #region SoundSharp Native API - DLL Imports
 
+#if x64
+        public const string SoundTouchDLLName = "./reference/SoundTouch_x64.dll";
+#else
         public const string SoundTouchDLLName = "./reference/SoundTouch.dll";
+#endif
 
         #region C DLL Header
         /*
